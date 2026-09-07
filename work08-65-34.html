@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>work08 html layout</title>
+<style>
+*{
+box-sizing:border-box;
+}
+header{
+       background-color:red;
+       height:120px;
+}
+nav{
+    background-color:green;
+    display:flex;
+}
+article{ 
+        float:left;
+        background-color:blue;
+}
+section::after{
+         clear:left;
+         display:table;
+         content:"";
+}
+footer{
+       background-color:yellow;
+       height:120px;
+       text-align:center;
+       
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="conteainer">
+<header>
+<h1>หัวข้อเรื่อง</h1>
+</hader>
+<section>
+<nav>
+<ul>
+<li>บ้านโป่ง</li>
+<li>โพธาราม</li>
+<li>บางแพ</li>
+</ul>
+</nav>
+<article>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.</p>
+</article>
+</section>
+<footer>
+<p>จัดทำโดยนางสาวปวฎา บุญรอด ม.6/5 เลขที่34<br><h1>ส่วนท้าย</h1>
+</footer>
+</div>
+</body>
+</html>
